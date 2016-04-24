@@ -5,8 +5,12 @@
     <% group.compact.each do |idea| %>
       <div class="col-md-4">
         <%= image_tag idea.picture_url, width: '100%' if idea.picture.present?%>
-        <h4><%= link_to idea.name, idea %></h4>
-        <%= idea.description %>
+        <h4><%= link_to idea.name, idea %>
+          <% if idea.comments.present? %>
+            <span class="badge" title="Comments"> <%= idea.comments.length %></span>
+          <% end %>
+        </h4>
+        <p><%= idea.description %></p>
       </div>
     <% end %>
   </div>
