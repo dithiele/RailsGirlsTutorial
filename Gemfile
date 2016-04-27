@@ -5,8 +5,12 @@ source 'https://rubygems.org'
 gem 'rails', '4.2.6'
 # Use sqlite3 as the database for Active Record
 gem 'sqlite3'
+# Zum Upload von Bildern
 gem 'carrierwave'
+# Zum Generieren von Thumbnails
 gem 'mini_magick', '3.8.0'
+# Usermanagement
+gem 'devise'
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 5.0'
 # Use Uglifier as compressor for JavaScript assets
